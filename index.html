@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable = no">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Carrito - Tienda</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1 class="text-center m-0 p-3 poppins bg-white">Tienda Online</h1>
+    <!-- inicio nav -->
+    <nav class="navbar col-12 p-2 bg-white rounded-bottom-2 m-0 p-0 navbar-expand-md">
+
+      <!-- button expand -->
+      <button class="col-2 mb-2 mx-auto navbar-toggler border" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="img/Menu.png" width="20px" alt="">
+      </button>
+
+      <div class="collapse col-12 col-md-6 navbar-collapse justify-content-evenly" id="navbarNav">
+
+        <div class="col-12 col-md-10 m-0 p-0 link menu col-lg col-xl-4 text-center row">
+          <a class="col text-decoration-none border rounded m-1 p-2 shadow-sm" aria-current="page" href="#">Inicio</a>
+          <a class="col text-decoration-none border rounded m-1 p-2 shadow-sm" href="#">Destacados</a>
+          <a class="col text-decoration-none border rounded m-1 p-2 shadow-sm" href="#">Ofertas</a>
+          <a class="col text-decoration-none border rounded m-1 p-2 shadow-sm" href="#">Contactos</a>
+        </div>
+
+        <!-- btn-Carrito -->
+        <div class='col-12 m-0 p-0 text-center mb-1 ml-3 mt-2 col-md-2 text-md-center text-xl-center col-xl-2'>
+          <a class="btn btn-carrito" data-bs-toggle="collapse" href="#carrito" role="button" aria-expanded="false"
+            aria-controls="multiCollapseExample1">
+            <img src="img/shopping-cart.png" alt="carrito">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- fin nav -->
+
+    <!-- incio lista carrito -->
+    <div class="row col-12 justify-content-center m-0 col-xl-11 justify-content-xl-end">
+
+      <div class="col-12 p-1 collapse col-sm p-0 row align-self-center block-md col-xl-4 bg-white rounded shadow"
+        id="carrito">
+        <table class="table m-0 shadow-sm mt-2 border-1">
+          <thead>
+            <tr>
+              <th scope="col" class='p-2'>Imagen</th>
+              <th scope="col" class='p-2'>Producto</th>
+              <th scope="col" class='p-2'>Precio</th>
+              <th scope="col" class='p-2'>Cantidad</th>
+              <th scope="col" class='p-2'></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+          </tbody>
+        </table>
+
+        <div class='row col-12 m-0 p-0'>
+          <button class="btn btn-success mx-auto col-4 col-2-lg m-2 btn-comprar" disabled='true'>Comprar</button>
+          <button class="btn btn-warning mx-auto col-4 col-2-lg m-2 btn-vaciar"  disabled='true'>Vaciar</button>
+          <h3 class="m-auto col-2 m-2 shadow border-0 p-2 fs-5" id="total"><span>Total $0</span></h3>
+        </div>
+
+        <div class="col-12 align-self-center d-flex justify-content-center mt-1 mt-5-lg" id='exito'></div>
+      </div>
+    </div>
+    <!-- fin lista carrito -->
+
+    <!-- Component - Card -->
+    <div class="d-flex align-content-around p-2 row mt-lg-3" id="lista-articulos"></div>
+    <footer class="row text-center m-0 p-0 mt-3 rounded-top">
+      <div class="col pt-4">Create by Carlos Deasi</div>
+      <div class="col pt-4">2021 - All rights reserved</div>
+      <div class="col pt-4">More information</div>
+    </footer>
+
+  </div>
+
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
